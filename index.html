@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pariwisata Labuan Bajo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-300 text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-sky-400 to-sky-200">
+    <h1 class="text-5xl font-bold text-white drop-shadow-lg">Selamat Datang di Labuan Bajo</h1>
+    <p class="mt-4 text-xl text-white max-w-2xl">Nikmati keindahan alam, pantai biru jernih, dan pesona Pulau Komodo yang menakjubkan.</p>
+     <p class="mt-4 text-xl text-white max-w-2xl">BERSAMA NOVITRIP.</p>
+    <a href="#destinasi" class="mt-6 px-6 py-3 bg-white text-sky-600 font-semibold rounded-2xl shadow-lg hover:bg-sky-100 transition">Jelajahi Sekarang</a>
+  </section>
+
+  <!-- Destinasi Populer -->
+  <section id="destinasi" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-sky-600">Destinasi Populer</h2>
+      <p class="text-center mt-2 text-gray-600">Labuan Bajo menawarkan pengalaman wisata yang tak terlupakan</p>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-10">
+        <!-- Card 1 -->
+        <div class="bg-sky-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="c:\Users\ACER\Documents\Labuan Bajo\pulau komodo.jpeg" alt="Pulau Komodo" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-sky-700">Pulau Komodo</h3>
+            <p class="text-gray-600 mt-2">Rumah bagi naga purba, Komodo, dengan pemandangan eksotis.</p>
+            <p class="text-gray-600 mt-2">Rp5.000.000</p>
+            <p class="text-gray-600 mt-2">selama 3 hari trip</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-sky-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="c:\Users\ACER\Documents\Labuan Bajo\Pink beach.jpeg" alt="Pantai Pink" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-sky-700">Pantai Pink</h3>
+            <p class="text-gray-600 mt-2">Salah satu pantai dengan pasir berwarna merah muda yang unik dan indah.</p>
+             <p class="text-gray-600 mt-2">Rp2.000.000</p>
+              <p class="text-gray-600 mt-2">Selama 3 hari Trip</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-sky-50 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="c:\Users\ACER\Documents\Labuan Bajo\pulau padar.jpeg" alt="Pulau Padar" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-sky-700">Pulau Padar</h3>
+            <p class="text-gray-600 mt-2">Panorama bukit yang spektakuler dengan laut biru di sekitarnya.</p>
+             <p class="text-gray-600 mt-2">Rp4.000.000</p>
+              <p class="text-gray-600 mt-2">Selama 3 hari trip</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sky-600 text-white text-center py-6">
+    <p>&copy; 2025 Pariwisata Labuan Bajo. Semua Hak Dilindungi.</p>
+  </footer>
+  <!-- Tombol Reservasi di Hero Section -->
+<a href="reservasi.html" 
+   class="mt-6 px-8 py-3 bg-yellow-400 text-sky-900 font-bold rounded-2xl shadow-lg hover:bg-yellow-500 transition">
+   Reservasi Sekarang
+</a>
+<!-- Form Reservasi -->
+<section id="reservasi" class="py-16 bg-sky-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-sky-700">Reservasi Perjalanan</h2>
+    <p class="text-center mt-2 text-gray-600">Isi formulir di bawah untuk melakukan reservasi wisata Labuan Bajo</p>
+
+    <form action="https://formspree.io/f/your_form_id" method="POST" class="mt-8 bg-white shadow-lg rounded-2xl p-6 space-y-4">
+      <!-- Nama -->
+      <div>
+        <label for="nama" class="block text-sky-700 font-medium">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required
+               class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-sky-400">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sky-700 font-medium">Email</label>
+        <input type="email" id="email" name="email" required
+               class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-sky-400">
+      </div>
+
+      <!-- Tanggal -->
+      <div>
+        <label for="tanggal" class="block text-sky-700 font-medium">Tanggal Perjalanan</label>
+        <input type="date" id="tanggal" name="tanggal" required
+               class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-sky-400">
+      </div>
+
+      <!-- Jumlah Orang -->
+      <div>
+        <label for="jumlah" class="block text-sky-700 font-medium">Jumlah Orang</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required
+               class="w-full mt-1 px-4 py-2 border rounded-xl focus:ring-2 focus:ring-sky-400">
+      </div>
+
+      <!-- Tombol Submit -->
+      <button type="submit"
+              class="w-full py-3 bg-yellow-400 text-sky-900 font-bold rounded-xl shadow-lg hover:bg-yellow-500 transition">
+        Kirim Reservasi
+      </button>
+    </form>
+  </div>
+</section>
+
+
+</body>
+</html>
